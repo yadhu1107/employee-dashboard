@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   NavLink,
   Routes,
   Route,
@@ -268,7 +268,7 @@ function EmployeeForm() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-shell">
         <Navbar />
         <Routes>
@@ -281,7 +281,7 @@ function App() {
           <span>Simple. Clear. Organized.</span>
         </footer>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
